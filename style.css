@@ -1,0 +1,48 @@
+.wrapper{
+    width: 800px;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border: 5px solid grey;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+.wrapper label span:nth-child(1){
+    width: 180px;
+    height: 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.wrapper label span:nth-child(2){
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: rotate(45deg);
+}
+label:hover{
+    background-color: grey;
+}
+input[type="checkbox"]:checked +label{
+    background-color: blue;
+    border: none;
+}
+input{
+    display: none;
+}
